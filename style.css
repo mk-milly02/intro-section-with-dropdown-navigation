@@ -1,0 +1,87 @@
+:root {
+	--almost-white: hsl(0, 0%, 98%);
+	--medium-gray: hsl(0, 0%, 41%);
+	--almost-black: hsl(0, 0%, 8%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Epilogue", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 1.1em 0em;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 16px;
+}
+
+nav button {
+	display: inline-block;
+	font-size: 1.25rem;
+	padding: 0.25rem 0rem;
+	background-color: transparent;
+	border: 0px;
+}
+
+.menu-icon {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(./images/icon-menu.svg);
+}
+
+.hero-img {
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.hero-text {
+	text-align: center;
+	margin: 0 16px;
+}
+
+.headline {
+	font-size: 1.95em;
+	font-weight: 700;
+}
+
+.hero-text p {
+	color: var(--medium-gray);
+	font-size: 0.9em;
+	line-height: 1.6;
+	margin: 1.3em 0;
+}
+
+.btn {
+	display: inline-flex;
+	box-sizing: border-box;
+	background-color: var(--almost-black);
+	color: var(--almost-white);
+	border-radius: 1em;
+	height: 50px;
+	width: 137px;
+	align-items: center;
+	justify-content: center;
+}
+
+.clients {
+	display: flex;
+	justify-content: space-between;
+	margin: 3em 0;
+}
+
+.clients img {
+	height: 1em;
+}
