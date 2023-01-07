@@ -41,6 +41,16 @@ nav button {
 	background-image: url(./images/icon-menu.svg);
 }
 
+.close-icon {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(./images/icon-close-menu.svg);
+}
+
 .hero-img {
 	width: 100%;
 	margin-top: 2em;
@@ -84,4 +94,32 @@ nav button {
 
 .clients img {
 	height: 1em;
+}
+
+.transparent-canvas {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--almost-black);
+	opacity: 0.5;
+}
+
+.menu {
+	position: absolute;
+	background-color: white;
+	top: 0;
+	left: 6em;
+	z-index: 1001;
+	width: 231px;
+	height: 100vh;
+	padding: 1em;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
 }
