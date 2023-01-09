@@ -85,7 +85,7 @@
 							<li><a>Careers</a></li>
 							<li><a>About</a></li>
 						</ul>
-						<div>
+						<div class="flex">
 							<a class="primary-btn">Login</a>
 							<a class="secondary-btn">Register</a>
 						</div>
@@ -94,20 +94,30 @@
 			</nav>
 		</header>
 		<main>
-			<img class="hero-img" src="./images/image-hero-mobile.png" alt="image-hero-mobile" />
-			<section class="hero-text">
-				<span class="headline">Make remote work</span>
-				<p>
-					Get your team in sync, no matter your location. Streamline processes, create
-					team rituals, and watch productivity soar.
-				</p>
-				<a class="btn">Learn more</a>
-				<div class="clients">
+			<picture>
+				<source media="(max-width: 600px)" srcset="./images/image-hero-mobile.png" />
+				<source srcset="./images/image-hero-desktop.png" />
+				<img
+					class="hero-img"
+					src="./images/image-hero-mobile.png"
+					alt="image-hero-mobile"
+				/>
+			</picture>
+			<section>
+				<section class="hero-text">
+					<span class="headline">Make remote work</span>
+					<p>
+						Get your team in sync, no matter your location. Streamline processes, create
+						team rituals, and watch productivity soar.
+					</p>
+					<a class="btn">Learn more</a>
+				</section>
+				<section class="clients">
 					<img src="./images/client-databiz.svg" alt="client-databiz" />
 					<img src="./images/client-audiophile.svg" alt="client-audiophile" />
 					<img src="./images/client-meet.svg" alt="client-meet" />
 					<img src="./images/client-maker.svg" alt="client-maker" />
-				</div>
+				</section>
 			</section>
 		</main>
 		<script src="./app.js"></script>

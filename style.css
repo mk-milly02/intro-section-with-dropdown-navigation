@@ -89,7 +89,7 @@ nav button {
 .clients {
 	display: flex;
 	justify-content: space-between;
-	margin: 3em 0;
+	margin: 3em 16px;
 }
 
 .clients img {
@@ -202,4 +202,97 @@ nav button {
 
 .show {
 	display: block;
+}
+
+@media only screen and (min-width: 600px) {
+	body {
+		padding: 1em 2em;
+		background-color: var(--almost-white);
+	}
+
+	nav {
+		margin: 0;
+		justify-content: flex-start;
+	}
+
+	nav > button {
+		display: none;
+	}
+
+	.menu {
+		display: block;
+		position: static;
+		height: auto;
+		width: 100%;
+		z-index: 0;
+		padding: 0;
+		margin-left: 4em;
+		background-color: transparent;
+	}
+
+	.menu > :is(div .flex-end) {
+		display: none;
+	}
+
+	.menu-items {
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.menu-items > ul {
+		margin: 0;
+		flex-direction: row;
+		font-size: 0.85em;
+	}
+
+	.flex {
+		display: flex;
+	}
+
+	.menu-items > :is(div .flex) {
+		width: 232px;
+		font-size: 0.85em;
+	}
+
+	main {
+		padding: 2em 5.2em 5em 5.2em;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 5em;
+	}
+
+	main > picture {
+		grid-column: 2;
+	}
+
+	main > section {
+		grid-column: 1;
+		grid-row: 1;
+		display: grid;
+		grid-template-rows: 1.7fr 0.3fr;
+	}
+
+	.hero-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+	}
+
+	.headline {
+		font-size: 3.7em;
+	}
+
+	.hero-text p {
+		margin: 2.3em 0;
+		font-size: 1em;
+	}
+
+	.clients {
+		margin: 0;
+		align-items: center;
+	}
 }
