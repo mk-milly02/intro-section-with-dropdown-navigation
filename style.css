@@ -7,6 +7,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -76,7 +77,6 @@ nav button {
 
 .btn {
 	display: inline-flex;
-	box-sizing: border-box;
 	background-color: var(--almost-black);
 	color: var(--almost-white);
 	border-radius: 1em;
@@ -112,14 +112,76 @@ nav button {
 	position: absolute;
 	background-color: white;
 	top: 0;
-	left: 6em;
+	right: 0;
 	z-index: 1001;
-	width: 231px;
+	width: 267px;
 	height: 100vh;
-	padding: 1em;
+	padding: 1em 1.5em;
 }
 
 .flex-end {
 	display: flex;
 	justify-content: flex-end;
+}
+
+.menu-items {
+	margin-top: 1em;
+	color: var(--medium-gray);
+	font-size: 0.9em;
+}
+
+.menu-items > ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	gap: 1.5em;
+	margin-bottom: 1em;
+}
+
+.menu-link {
+	display: inline-flex;
+	gap: 0.7em;
+}
+
+.icon-arrow-down {
+	background-image: url(./images/icon-arrow-down.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 1em;
+}
+
+.primary-btn {
+	display: inline-flex;
+	background-color: transparent;
+	height: 40px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.secondary-btn {
+	display: inline-flex;
+	border: 1px solid black;
+	border-radius: 0.8em;
+	height: 40px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.sub-list {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 1.7em 0 0 1.5em;
+	gap: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.sub-list .menu-link {
+	align-items: center;
+}
+
+.menu-link > img {
+	width: 1.1em;
 }
