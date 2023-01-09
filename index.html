@@ -13,23 +13,23 @@
 		<header>
 			<nav>
 				<img src="./images/logo.svg" alt="logo" />
-				<button type="button">
+				<button type="button" onclick="openMenu()">
 					<span class="menu-icon"></span>
 				</button>
 				<div class="menu">
 					<div class="flex-end">
-						<button class="close-button" type="button">
+						<button class="close-button" type="button" onclick="closeMenu()">
 							<span class="close-icon"></span>
 						</button>
 					</div>
 					<div class="menu-items">
 						<ul>
 							<li>
-								<a class="menu-link">
+								<a id="features-link" class="dropdown-link" onclick="drop1()">
 									<span>Features</span>
-									<span class="icon-arrow-down"></span>
+									<span class="icon-arrow"></span>
 								</a>
-								<ul class="sub-list">
+								<ul id="features" class="sub-list">
 									<li>
 										<a class="menu-link">
 											<img src="./images/icon-todo.svg" alt="icon-todo" />
@@ -66,11 +66,11 @@
 								</ul>
 							</li>
 							<li>
-								<a class="menu-link">
+								<a id="company-link" class="dropdown-link" onclick="drop2()">
 									<span>Company</span>
-									<span class="icon-arrow-down"></span>
+									<span class="icon-arrow"></span>
 								</a>
-								<ul class="sub-list">
+								<ul id="company-sub" class="sub-list">
 									<li>
 										<a class="menu-link"> History </a>
 									</li>
@@ -110,5 +110,6 @@
 				</div>
 			</section>
 		</main>
+		<script src="./app.js"></script>
 	</body>
 </html>

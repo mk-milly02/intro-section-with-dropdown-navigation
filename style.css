@@ -109,6 +109,7 @@ nav button {
 }
 
 .menu {
+	display: none;
 	position: absolute;
 	background-color: white;
 	top: 0;
@@ -143,11 +144,20 @@ nav button {
 	gap: 0.7em;
 }
 
-.icon-arrow-down {
+.dropdown-link {
+	display: inline-flex;
+	gap: 0.7em;
+}
+
+.icon-arrow {
 	background-image: url(./images/icon-arrow-down.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 1em;
+}
+
+.icon-arrow-up {
+	background-image: url(./images/icon-arrow-up.svg);
 }
 
 .primary-btn {
@@ -170,12 +180,16 @@ nav button {
 }
 
 .sub-list {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	list-style-type: none;
 	padding: 1.7em 0 0 1.5em;
 	gap: 1.5em;
 	margin-bottom: 0.5em;
+}
+
+.sub-list-show {
+	display: flex;
 }
 
 .sub-list .menu-link {
@@ -184,4 +198,8 @@ nav button {
 
 .menu-link > img {
 	width: 1.1em;
+}
+
+.show {
+	display: block;
 }
