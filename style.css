@@ -171,7 +171,7 @@ nav button {
 
 .secondary-btn {
 	display: inline-flex;
-	border: 1px solid black;
+	border: 1px solid var(--almost-black);
 	border-radius: 0.8em;
 	height: 40px;
 	width: 100%;
@@ -294,5 +294,47 @@ nav button {
 	.clients {
 		margin: 0;
 		align-items: center;
+	}
+
+	nav a {
+		cursor: pointer;
+	}
+
+	nav a:hover {
+		color: var(--almost-black);
+	}
+
+	.dropdown-link:hover .icon-arrow {
+		filter: brightness(0);
+	}
+
+	.sub-list {
+		padding: 1.5em 2em;
+		margin: 1em 0 0 0;
+		position: absolute;
+		z-index: 1;
+		border-radius: 1em;
+		background-color: white;
+		box-shadow: 0 4px 18px 5px rgba(0, 0, 0, 0.15);
+	}
+
+	#features {
+		left: 9em;
+		gap: 0.9em;
+	}
+
+	#features > img {
+		width: 0.9em;
+	}
+
+	.secondary-btn:hover {
+		border: 2px solid var(--almost-black);
+	}
+
+	.btn:hover {
+		cursor: pointer;
+		border: 1px solid var(--almost-black);
+		background-color: transparent;
+		color: var(--almost-black);
 	}
 }
